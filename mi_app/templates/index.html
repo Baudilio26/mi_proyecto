@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Django</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header class="bg-dark text-white text-center p-3">
+        <h1>Mi Proyecto Django</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container mt-5">
+        <!-- Sección de Bienvenida -->
+        <section>
+            <h2>Bienvenido a Mi Proyecto</h2>
+            <p>Esta es una introducción a mi página web desarrollada con Django.</p>
+        </section>
+        <!-- Sección de Servicios -->
+        <section id="servicios" class="mt-5">
+            <h2>Servicios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Servicio 1</h3>
+                    <p>Descripción del servicio 1.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Servicio 2</h3>
+                    <p>Descripción del servicio 2.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Servicio 3</h3>
+                    <p>Descripción del servicio 3.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="mt-5">
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos en <a href="mailto:info@mi_proyecto.com">info@mi_proyecto.com</a></p>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2024 Mi Proyecto. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
